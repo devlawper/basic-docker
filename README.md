@@ -3,10 +3,14 @@
 Base pour un projet Symfony 4 sous docker
 
 ### Dockerfile basé sur PHP 7.3
-* Pour construire l'image, on execute la command `docker build -t basic .` le -t permet de donner un tag (nom) à l'image, le . à la fin de définit le context.
+* Pour construire l'image, on execute la command 
+`docker build -t basic .`
+le -t permet de donner un tag (nom) à l'image, le . à la fin de définit le context.
 
 ### Utilisation de l'image
-* On lance la command `docker run basic` qui va nous afficher ce que nous avons mis dans `CMD`
+* On lance la command
+`docker run basic`
+qui va nous afficher ce que nous avons mis dans `CMD`
 
 ### Mettre en ligne son image
 * il est possible (comme pour git) de mettre en ligne son image. 
@@ -17,6 +21,11 @@ Base pour un projet Symfony 4 sous docker
 * Avec la registry docker de git lab
 `docker build -t registry.gitlab.com/devlawper/basic-docker .`
 `docker push registry.gitlab.com/devlawper/basic-docker`
+
+### Lancer le conteneur en mappant le port 80 du conteneur sur le port 82 en local avec --rm pour qu'il soit supprimer quand on l'arrête
+`docker build -t basic .`
+`docker run --rm -p 82:80 basic`
+
 ---
 
 ## Commandes utiles : 
