@@ -26,6 +26,9 @@ qui va nous afficher ce que nous avons mis dans `CMD`
 `docker build -t basic .`
 `docker run --rm -p 82:80 basic`
 
+### Création d'un Makefile
+* Dans le Makefile on liste les commandes utiles au lancement du container (voir commentaires dans le fichier)
+
 ---
 
 ## Commandes utiles : 
