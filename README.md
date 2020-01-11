@@ -11,10 +11,10 @@ Base pour un projet Symfony 4 sous docker
 ### Mettre en ligne son image
 * il est possible (comme pour git) de mettre en ligne son image. 
 
-Avec docker hub :
+* Avec docker hub :
 `docker build -t teamtechcacho/basic-docker .`
 `docker push teamtechcacho/basic-docker`
-Avec la registry docker de git lab
+* Avec la registry docker de git lab
 `docker build -t registry.gitlab.com/devlawper/basic-docker .`
 `docker push registry.gitlab.com/devlawper/basic-docker`
 ---
