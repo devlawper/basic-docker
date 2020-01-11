@@ -1,6 +1,6 @@
 # basic-docker
 
-Base pour un projet Symfony 4 sous docker
+Base pour un projet PHP sous docker
 
 ### Dockerfile basé sur PHP 7.3
 * Pour construire l'image, on execute la command 
