@@ -5,4 +5,4 @@ FROM php:7.3-alpine
 COPY . /
 
 # On lance un server PHP pour interpreter le fichier index.php
-CMD php -S 0.0.0.0:80 index.php
+CMD php -S 0.0.0.0:80 app/public/index.php

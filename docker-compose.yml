@@ -1,0 +1,20 @@
+# Version de docker-compose, voir : https://docs.docker.com/compose/compose-file/compose-versioning/
+version: '3'
+# On détail ici les différents services à lancer
+services:
+  # Nom du service (au choix)
+  app:
+    # Construction du container
+    build:
+      # Chemin à parti duquel on execute les commandes
+      context: .
+      # Chemin vers le Dockerfile
+      dockerfile: docker/Dockerfile
+    # Nom de l'image construite à partir du Dockerfile
+    image: basic
+    # Mapping des ports <portMachine>:<portContainer>
+    ports:
+    - 82:80
+    # On lie les dossiers/fichiers à la racine de notre application dans un fichier du container qu'on appelle app/
+    volumes:
+    - .:/app/

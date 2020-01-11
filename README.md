@@ -29,6 +29,16 @@ qui va nous afficher ce que nous avons mis dans `CMD`
 ### Création d'un Makefile
 * Dans le Makefile on liste les commandes utiles au lancement du container (voir commentaires dans le fichier)
 
+### Création du fichier docker-compose.yml
+* Ce fichier va nous permettre le construire notre container avec un certains nombres de paramètres. Pour le lancer il faudra faire la command
+`docker-compose up -- build`
+* Pour garder la main dans la CLI on ajoute `-d` = detach
+`docker-compose up -d -- build`
+
+### Création d'un volume
+* Afin de pouvoir voir les modification de notre code dans le navigateur, il faut créer un volume. Ce paramètre est à ajouter dans le docker-compose
+* Il ne faut pas oublier de modifier le chemin dans la commande de notre image dans le Dockerfile, pour qu'il pointe vers le volume ainsi créé.
+
 ---
 
 ## Commandes utiles : 
